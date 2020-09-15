@@ -1,5 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';;
+import PropTypes from 'prop-types';
+import './App.css';
 
 function Movie({ year, rating, title, summary, poster, genres }) {
     return (
@@ -9,9 +10,9 @@ function Movie({ year, rating, title, summary, poster, genres }) {
                 <h3 className="movie__title">{title}</h3>
                 <h3 className="movie__year">{year}</h3>
                 <p className="movie__summary">{summary}</p>
-                <ul className="genres">
+                <ul className="movie__genres">
                     {genres.map((genre, index) => 
-                        <li key={index} className="genres__genre">{genre}</li>
+                        <li key={index} className="movie__genre">{genre}</li>
                     )}
                 </ul>
             </div>
