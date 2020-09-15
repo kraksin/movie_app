@@ -10,12 +10,20 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html,
+body,
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .loader {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .movies {
@@ -23,7 +31,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    width: 80%;
+    width: 95%;
     padding: 50px;
     padding-top: 70px;
 }
